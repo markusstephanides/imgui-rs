@@ -67,7 +67,7 @@ pub struct Context {
     #[cfg(feature = "docking")]
     renderer_viewport_ctx: Box<UnsafeCell<crate::RendererViewportContext>>,
 
-    ui: Ui,
+    pub ui: Ui,
 }
 
 // This mutex needs to be used to guard all public functions that can affect the underlying
